@@ -2,14 +2,9 @@ import { useCallback, useEffect, useState } from "react"
 import { FullCompany } from "../../../../../server/types"
 import ExitKeyMessage from "../../../widgets/ExitKeyMessage"
 import Input from "../../../widgets/Input"
+import { FilterProps } from "./types"
 
-interface Props {
-  companies: FullCompany[]
-  onFilterCompaniesChange: (companies: FullCompany[]) => void
-  onCancel: () => void
-}
-
-const FilterByName: React.FC<Props> = props => {
+const FilterByName: React.FC<FilterProps> = props => {
   const {
     companies,
     onFilterCompaniesChange,

@@ -4,14 +4,9 @@ import { getSpecialties } from "../../../api/specialties"
 import CheckboxSwitch from "../../../widgets/CheckboxSwitch"
 import ExitKeyMessage from "../../../widgets/ExitKeyMessage"
 import SelectMultiple from "../../../widgets/SelectMultiple"
+import { FilterProps } from "./types"
 
-interface Props {
-  companies: FullCompany[]
-  onFilterCompaniesChange: (companies: FullCompany[]) => void
-  onCancel: () => void
-}
-
-const FilterBySpecialties: React.FC<Props> = props => {
+const FilterBySpecialties: React.FC<FilterProps> = props => {
   const {
     companies,
     onFilterCompaniesChange,
