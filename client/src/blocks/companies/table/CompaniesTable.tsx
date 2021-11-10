@@ -4,8 +4,6 @@ import List from "../../../widgets/List"
 import CompanyRow from "./CompanyRow"
 import HeaderRow from "./HeaderRow"
 
-
-
 interface Props {
   companies: FullCompany[]
   onCompanyClick?: (companyId: CompanyId) => void
