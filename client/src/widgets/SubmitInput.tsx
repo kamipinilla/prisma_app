@@ -25,9 +25,9 @@ const SubmitInput: React.FC<Props> = props => {
     placeholder,
   } = props
 
-  const initialValue = props.initialValue ?? null
   const showHowTo = props.showHowTo ?? false
 
+  const [initialValue] = useState<string | null>(props.initialValue ?? null)
   const [value, setValue] = useState<string | null>(initialValue)
 
   useEffect(function notifyValueChangeInfo() {
