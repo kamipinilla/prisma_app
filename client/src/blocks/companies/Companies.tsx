@@ -12,10 +12,9 @@ const Companies: React.FC = () => {
   const history = useHistory()
   
   const [companies, setCompanies] = useState<FullCompany[] | null>(null)
-  const loadCompanies = useCallback(() => {
+  useEffect(function loadCompanies() {
     getFullCompanies().then(setCompanies)
   }, [])
-  useEffect(loadCompanies, [loadCompanies])
 
   const [filteredCompanies, setFilteredCompanies] = useState<FullCompany[]>([])
 
