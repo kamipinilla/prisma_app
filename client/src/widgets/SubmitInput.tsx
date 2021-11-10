@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import { Key } from '../types'
 import Input from './Input'
 import Pill from './Pill'
 
@@ -47,7 +48,8 @@ const SubmitInput: React.FC<Props> = props => {
     onCancel()
   }, [onCancel])
 
-  const handleKeyDown = useCallback((key: string) => {
+  const handleKeyDown = useCallback((inputKey: string) => {
+    const key = inputKey as Key
     switch (key) {
       case 'Enter':
         handleEnterPressed()

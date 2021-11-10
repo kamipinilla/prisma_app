@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react"
 import { FullCompany } from "../../../../../server/types"
+import { Key } from "../../../types"
 import ExitKeyMessage from "../../../widgets/ExitKeyMessage"
 import Input from "../../../widgets/Input"
 import { FilterProps } from "./types"
@@ -21,7 +22,8 @@ const FilterByName: React.FC<FilterProps> = props => {
     })
   }, [companies])
 
-  const handleKeyDown = useCallback((key: string) => {
+  const handleKeyDown = useCallback((inputKey: string) => {
+    const key = inputKey as Key
     if (key === 'Escape') {
       onCancel()
     }

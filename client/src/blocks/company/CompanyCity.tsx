@@ -2,6 +2,7 @@ import { useCallback, useState } from "react"
 import { City, CityId, FullCompany } from "../../../../server/types"
 import { getCities } from "../../api/cities"
 import { updateCompany } from "../../api/companies"
+import { Key } from "../../types"
 import ExitKeyMessage from "../../widgets/ExitKeyMessage"
 import Select from "../../widgets/Select"
 
@@ -25,7 +26,8 @@ const CompanyCity: React.FC<Props> = props => {
     setIsEditingCity(false)
   }, [company, onCompanyUpdated])
 
-  const handleKeyDown = useCallback((key: string) => {
+  const handleKeyDown = useCallback((inputKey: string) => {
+    const key = inputKey as Key
     if (key === 'Escape') {
       setIsEditingCity(false)
     }
