@@ -1,7 +1,7 @@
-import { useCallback, useState } from "react"
-import { CreateSpecialty, Specialty } from "../../../../../server/types"
-import { createSpecialty } from "../../../api/specialties"
-import SubmitInput from "../../../widgets/SubmitInput"
+import { useCallback, useState } from 'react'
+import { CreateSpecialty, Specialty } from '../../../../../server/types'
+import { createSpecialty } from '../../../api/specialties'
+import SubmitInput from '../../../widgets/SubmitInput'
 
 interface Props {
   specialties: Specialty[]

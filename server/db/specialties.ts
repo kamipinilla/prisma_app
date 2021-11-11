@@ -1,6 +1,6 @@
-import { PrismaClient } from ".prisma/client"
-import { CreateSpecialty, Specialty, SpecialtyId } from "../types"
-import { toSpecialty } from "./transformType"
+import { PrismaClient } from '.prisma/client'
+import { CreateSpecialty, Specialty, SpecialtyId } from '../types'
+import { toSpecialty } from './transformType'
 
 const prisma = new PrismaClient()
 

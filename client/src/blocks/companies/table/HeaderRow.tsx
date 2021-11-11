@@ -1,4 +1,4 @@
-import Row from "./Row"
+import Row from './Row'
 
 const HeaderRow: React.FC = () => {
   return (

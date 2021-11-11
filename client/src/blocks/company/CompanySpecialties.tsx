@@ -1,8 +1,8 @@
-import { useCallback } from "react"
-import { FullCompany, Specialty, SpecialtyId } from "../../../../server/types"
-import { setCompanySpecialties } from "../../api/companies"
-import { getSpecialties } from "../../api/specialties"
-import SelectMultiple from "../../widgets/SelectMultiple"
+import { useCallback } from 'react'
+import { FullCompany, Specialty, SpecialtyId } from '../../../../server/types'
+import { setCompanySpecialties } from '../../api/companies'
+import { getSpecialties } from '../../api/specialties'
+import SelectMultiple from '../../widgets/SelectMultiple'
 
 interface Props {
   company: FullCompany

@@ -12,7 +12,7 @@ export async function getCompanies(): Promise<Company[]> {
     return companies
   } else {
     const error = json as RestError
-    throw Error(error.err)
+    throw Error(error.message)
   }
 }
 
@@ -24,7 +24,7 @@ export async function getFullCompanies(): Promise<FullCompany[]> {
     return companies
   } else {
     const error = json as RestError
-    throw Error(error.err)
+    throw Error(error.message)
   }
 }
 
@@ -36,7 +36,7 @@ export async function getCompany(id: CompanyId): Promise<Company> {
     return company
   } else {
     const error = json as RestError
-    throw Error(error.err)
+    throw Error(error.message)
   }
 }
 
@@ -48,7 +48,7 @@ export async function getFullCompany(id: CompanyId): Promise<FullCompany> {
     return company
   } else {
     const error = json as RestError
-    throw Error(error.err)
+    throw Error(error.message)
   }
 }
 
@@ -60,7 +60,7 @@ export async function getCompanySpecialties(id: CompanyId): Promise<Specialty[]>
     return specialties
   } else {
     const error = json as RestError
-    throw Error(error.err)
+    throw Error(error.message)
   }
 }
 
@@ -69,7 +69,7 @@ export async function setCompanySpecialties(id: CompanyId, specialtiesIds: Speci
   const response = await post(`${apiPath}/${entryName}/${id}/specialties`, request)
   if (!response.ok) {
     const error: RestError = await response.json()
-    throw Error(error.err)
+    throw Error(error.message)
   }
 }
 
@@ -77,7 +77,7 @@ export async function updateCompany(id: CompanyId, update: UpdateCompany) {
   const response = await put(`${apiPath}/${entryName}/${id}`, update)
   if (!response.ok) {
     const error: RestError = await response.json()
-    throw Error(error.err)
+    throw Error(error.message)
   }
 }
 
@@ -89,6 +89,6 @@ export async function getCompanyCity(id: CompanyId): Promise<City> {
     return city
   } else {
     const error = json as RestError
-    throw Error(error.err)
+    throw Error(error.message)
   }
 }

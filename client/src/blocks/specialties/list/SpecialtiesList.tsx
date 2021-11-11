@@ -1,7 +1,7 @@
-import { Specialty } from "../../../../../server/types"
-import { deleteSpecialty } from "../../../api/specialties"
-import List from "../../../widgets/List"
-import ListItem from "../../../widgets/ListItem"
+import { Specialty } from '../../../../../server/types'
+import { deleteSpecialty } from '../../../api/specialties'
+import List from '../../../widgets/List'
+import ListItem from '../../../widgets/ListItem'
 
 interface Props {
   specialties: Specialty[]

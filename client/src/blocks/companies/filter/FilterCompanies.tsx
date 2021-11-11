@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react"
-import { FullCompany } from "../../../../../server/types"
-import Button from "../../../widgets/Button"
-import FilterByName from "./FilterByName"
-import FilterBySpecialties from "./FilterBySpecialties"
+import { useEffect, useState } from 'react'
+import { FullCompany } from '../../../../../server/types'
+import Button from '../../../widgets/Button'
+import FilterByName from './FilterByName'
+import FilterBySpecialties from './FilterBySpecialties'
 
 enum FilterKind {
   Name = 1,

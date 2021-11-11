@@ -1,4 +1,4 @@
-import ListItem from "../../../widgets/ListItem"
+import ListItem from '../../../widgets/ListItem'
 
 interface Props {
   firstCol: string

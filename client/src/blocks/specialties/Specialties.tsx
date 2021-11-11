@@ -1,10 +1,10 @@
-import { useCallback, useEffect, useState } from "react"
-import { Specialty } from "../../../../server/types"
-import { getSpecialties } from "../../api/specialties"
-import H from "../../widgets/H"
-import Header from "../../widgets/Header"
-import SpecialtiesList from "./list/SpecialtiesList"
-import UpdateSpecialties from "./update/UpdateSpecialties"
+import { useCallback, useEffect, useState } from 'react'
+import { Specialty } from '../../../../server/types'
+import { getSpecialties } from '../../api/specialties'
+import H from '../../widgets/H'
+import Header from '../../widgets/Header'
+import SpecialtiesList from './list/SpecialtiesList'
+import UpdateSpecialties from './update/UpdateSpecialties'
 
 const Specialties: React.FC = () => {
   const [specialties, setSpecialties] = useState<Specialty[] | null>(null)

@@ -1,4 +1,4 @@
-import { FullCompany } from "../../../../../server/types"
+import { FullCompany } from '../../../../../server/types'
 
 export interface FilterProps {
   companies: FullCompany[]

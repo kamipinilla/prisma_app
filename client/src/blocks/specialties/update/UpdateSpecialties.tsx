@@ -1,8 +1,8 @@
-import { useCallback, useEffect, useState } from "react"
-import { Specialty } from "../../../../../server/types"
-import Button from "../../../widgets/Button"
-import AddSpecialty from "./AddSpecialty"
-import DeleteSpecialty from "./DeleteSpecialty"
+import { useCallback, useEffect, useState } from 'react'
+import { Specialty } from '../../../../../server/types'
+import Button from '../../../widgets/Button'
+import AddSpecialty from './AddSpecialty'
+import DeleteSpecialty from './DeleteSpecialty'
 
 enum EditionKind {
   Adding = 1,

@@ -32,11 +32,11 @@ export interface City {
 }
 
 export interface RestError {
-  err: string
+  message: string
 }
 
 export interface RestSuccess {
-  msg: string
+  message: string
 }
 
 export interface RestItems {

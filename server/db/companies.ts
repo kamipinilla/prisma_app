@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client'
-import { City, Company, CompanyId, FullCompany, Specialty, SpecialtyId, UpdateCompany } from "../types"
+import { City, Company, CompanyId, FullCompany, Specialty, SpecialtyId, UpdateCompany } from '../types'
 import { toCity, toCompany, toFullCompany, toSpecialty } from './transformType'
 
 const prisma = new PrismaClient()

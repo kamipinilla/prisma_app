@@ -1,8 +1,8 @@
-import { useCallback, useState } from "react"
-import { FullCompany } from "../../../../server/types"
-import { updateCompany } from "../../api/companies"
-import H from "../../widgets/H"
-import SubmitInput from "../../widgets/SubmitInput"
+import { useCallback, useState } from 'react'
+import { FullCompany } from '../../../../server/types'
+import { updateCompany } from '../../api/companies'
+import H from '../../widgets/H'
+import SubmitInput from '../../widgets/SubmitInput'
 
 interface Props {
   company: FullCompany

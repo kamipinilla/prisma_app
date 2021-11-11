@@ -1,5 +1,5 @@
-import { FullCompany } from "../../../../../server/types"
-import Row from "./Row"
+import { FullCompany } from '../../../../../server/types'
+import Row from './Row'
 
 interface CompanyRowProps {
   company: FullCompany

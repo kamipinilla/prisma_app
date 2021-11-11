@@ -16,12 +16,12 @@ router.post('/', async (req, res) => {
   if (!await specialtyExists(name)) {
     const createdSpecialty = await createSpecialty(createSpecialtyReq)
     const success: RestSuccess = {
-      msg: `Specialty with id "${createdSpecialty.id}" created`
+      message: `Specialty with id "${createdSpecialty.id}" created`
     }
     res.json(success)
   } else {
     const error: RestError = {
-      err: `Specialty with name "${name}" already exists.`
+      message: `Specialty with name "${name}" already exists.`
     }
     res.status(400).json(error)
   }
@@ -31,7 +31,7 @@ router.delete('/:id', async (req, res) => {
   const id = parseInt(req.params.id)
   await deleteSpecialty(id)
   const success: RestSuccess = {
-    msg: `Specialty with id "${id}" deleted`
+    message: `Specialty with id "${id}" deleted`
   }
   res.json(success)
 })

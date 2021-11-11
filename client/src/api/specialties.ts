@@ -1,6 +1,6 @@
-import { CreateSpecialty, RestError, RestItems, Specialty, SpecialtyId } from "../../../server/types"
-import { apiPath } from "./config"
-import { del, get, post } from "./rest"
+import { CreateSpecialty, RestError, RestItems, Specialty, SpecialtyId } from '../../../server/types'
+import { apiPath } from './config'
+import { del, get, post } from './rest'
 
 const entryName = 'specialties'
 
@@ -12,7 +12,7 @@ export async function getSpecialties(): Promise<Specialty[]> {
     return specialties
   } else {
     const error = json as RestError
-    throw Error(error.err)
+    throw Error(error.message)
   }
 }
 
@@ -20,7 +20,7 @@ export async function createSpecialty(createSpecialty: CreateSpecialty) {
   const response = await post(`${apiPath}/${entryName}`, createSpecialty)
   if (!response.ok) {
     const error: RestError = await response.json()
-    throw Error(error.err)
+    throw Error(error.message)
   }
 }
 
@@ -28,6 +28,6 @@ export async function deleteSpecialty(id: SpecialtyId) {
   const response = await del(`${apiPath}/${entryName}/${id}`)
   if (!response.ok) {
     const error: RestError = await response.json()
-    throw Error(error.err)
+    throw Error(error.message)
   }
 }

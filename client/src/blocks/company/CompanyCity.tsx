@@ -1,10 +1,10 @@
-import { useCallback, useState } from "react"
-import { City, CityId, FullCompany } from "../../../../server/types"
-import { getCities } from "../../api/cities"
-import { updateCompany } from "../../api/companies"
-import { Key } from "../../types"
-import ExitKeyMessage from "../../widgets/ExitKeyMessage"
-import Select from "../../widgets/Select"
+import { useCallback, useState } from 'react'
+import { City, CityId, FullCompany } from '../../../../server/types'
+import { getCities } from '../../api/cities'
+import { updateCompany } from '../../api/companies'
+import { Key } from '../../types'
+import ExitKeyMessage from '../../widgets/ExitKeyMessage'
+import Select from '../../widgets/Select'
 
 interface Props {
   company: FullCompany

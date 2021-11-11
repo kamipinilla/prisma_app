@@ -1,6 +1,6 @@
-import { City, RestError, RestItems } from "../../../server/types"
-import { apiPath } from "./config"
-import { get } from "./rest"
+import { City, RestError, RestItems } from '../../../server/types'
+import { apiPath } from './config'
+import { get } from './rest'
 
 const entryName = 'cities'
 
@@ -12,6 +12,6 @@ export async function getCities(): Promise<City[]> {
     return cities
   } else {
     const error = json as RestError
-    throw Error(error.err)
+    throw Error(error.message)
   }
 }

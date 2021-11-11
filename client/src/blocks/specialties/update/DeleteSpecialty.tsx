@@ -1,6 +1,6 @@
-import { useEffect } from "react"
-import { Specialty } from "../../../../../server/types"
-import Button from "../../../widgets/Button"
+import { useEffect } from 'react'
+import { Specialty } from '../../../../../server/types'
+import Button from '../../../widgets/Button'
 
 interface Props {
   specialties: Specialty[]

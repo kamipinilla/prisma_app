@@ -1,11 +1,11 @@
-import { useCallback, useEffect, useState } from "react"
-import { FullCompany, Specialty, SpecialtyId } from "../../../../../server/types"
-import { getSpecialties } from "../../../api/specialties"
-import { Key } from "../../../types"
-import CheckboxSwitch from "../../../widgets/CheckboxSwitch"
-import ExitKeyMessage from "../../../widgets/ExitKeyMessage"
-import SelectMultiple from "../../../widgets/SelectMultiple"
-import { FilterProps } from "./types"
+import { useCallback, useEffect, useState } from 'react'
+import { FullCompany, Specialty, SpecialtyId } from '../../../../../server/types'
+import { getSpecialties } from '../../../api/specialties'
+import { Key } from '../../../types'
+import CheckboxSwitch from '../../../widgets/CheckboxSwitch'
+import ExitKeyMessage from '../../../widgets/ExitKeyMessage'
+import SelectMultiple from '../../../widgets/SelectMultiple'
+import { FilterProps } from './types'
 
 const FilterBySpecialties: React.FC<FilterProps> = props => {
   const {

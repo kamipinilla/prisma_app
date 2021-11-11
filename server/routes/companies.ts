@@ -24,7 +24,7 @@ router.get('/:id', async (req, res) => {
     res.json(company)
   } else {
     const error: RestError = {
-      err: notFoundMessage(id),
+      message: notFoundMessage(id),
     }
     res.status(400).json(error)
   }
@@ -40,7 +40,7 @@ router.get('/:id/specialties', async (req, res) => {
     res.json(response)
   } else {
     const error: RestError = {
-      err: notFoundMessage(id),
+      message: notFoundMessage(id),
     }
     res.status(400).json(error)
   }
@@ -52,12 +52,12 @@ router.post('/:id/specialties', async (req, res) => {
     const specialiesIds: SpecialtyId[] = (req.body as RestItems).items
     await setCompanySpecialties(id, specialiesIds)
     const success: RestSuccess = {
-      msg: 'Specialties updated.'
+      message: 'Specialties updated.'
     }
     res.json(success)
   } else {
     const error: RestError = {
-      err: notFoundMessage(id),
+      message: notFoundMessage(id),
     }
     res.status(400).json(error)
   }
@@ -70,12 +70,12 @@ router.put('/:id', async (req, res) => {
 
     await updateCompany(id, update)
     const success: RestSuccess = {
-      msg: 'Specialties updated.'
+      message: 'Specialties updated.'
     }
     res.json(success)
   } else {
     const error: RestError = {
-      err: notFoundMessage(id),
+      message: notFoundMessage(id),
     }
     res.status(400).json(error)
   }
@@ -88,7 +88,7 @@ router.get('/:id/city', async (req, res) => {
     res.json(city)
   } else {
     const error: RestError = {
-      err: notFoundMessage(id),
+      message: notFoundMessage(id),
     }
     res.status(400).json(error)
   }

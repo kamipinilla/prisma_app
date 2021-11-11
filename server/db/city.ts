@@ -1,6 +1,6 @@
-import { PrismaClient } from ".prisma/client"
-import { City } from "../types"
-import { toCity } from "./transformType"
+import { PrismaClient } from '.prisma/client'
+import { City } from '../types'
+import { toCity } from './transformType'
 
 const prisma = new PrismaClient()
 

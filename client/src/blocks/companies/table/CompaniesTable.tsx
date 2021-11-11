@@ -1,8 +1,8 @@
-import React from "react"
-import { CompanyId, FullCompany } from "../../../../../server/types"
-import List from "../../../widgets/List"
-import CompanyRow from "./CompanyRow"
-import HeaderRow from "./HeaderRow"
+import React from 'react'
+import { CompanyId, FullCompany } from '../../../../../server/types'
+import List from '../../../widgets/List'
+import CompanyRow from './CompanyRow'
+import HeaderRow from './HeaderRow'
 
 interface Props {
   companies: FullCompany[]
