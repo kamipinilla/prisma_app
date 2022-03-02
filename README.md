@@ -1,6 +1,4 @@
-## How to run
-
-### Server
+## Server
 
 ```bash
 cd server
@@ -8,7 +6,7 @@ npm i
 npm start
 ```
 
-### Client
+## Client
 
 ```bash
 cd client
